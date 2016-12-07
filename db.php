@@ -1,6 +1,6 @@
 <?php
 
-class Pdo
+class DB
 {
     private $pdo;
     

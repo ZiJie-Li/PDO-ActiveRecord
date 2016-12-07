@@ -6,7 +6,7 @@
 * @version      1.0
 */
 
-require_once(__DIR__ . '/db.php');
+require_once dirname(__FILE__) . '/db.php';
 
 class ActiveRecord
 {
@@ -38,7 +38,7 @@ class ActiveRecord
 
     public function __construct()
     {
-        $this->db =  new Pdo();
+        $this->db =  new DB();
         $this->select = '*';
         $this->distinct = '';
         $this->table = null;

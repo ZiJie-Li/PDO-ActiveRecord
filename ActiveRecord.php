@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
 * ActiveRecord  -  This class works like ORM.
 *
@@ -6,7 +6,12 @@
 * @version      1.0
 */
 
+namespace Lee;
+
 require_once dirname(__FILE__) . '/db.php';
+
+use Lee\DB;
+use \PDO;
 
 class ActiveRecord
 {

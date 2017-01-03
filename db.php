@@ -1,5 +1,8 @@
 <?php
 
+namespace Lee;
+use \PDO;
+
 class DB
 {
     private $pdo;
@@ -16,7 +19,7 @@ class DB
      *  1. Get settings
      *	2. Connect to database.
      */
-    public function __construct($config = array())
+    public function __construct()
     {
         #Get settings
         if (file_exists(__DIR__ . "/config.php")) {
